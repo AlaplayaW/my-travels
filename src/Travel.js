@@ -1,7 +1,8 @@
 import React from "react";
 
-const Travel = ({ destination, country, distance, image }) => (
-  <figure>
+
+const Travel = ({ id, destination, country, distance, image }) => (
+  <figure key={id}>
     <img src={image} alt={image} width="700" />
     <figcaption>
       <div>{destination}</div>
